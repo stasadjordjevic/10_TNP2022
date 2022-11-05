@@ -1,5 +1,4 @@
 \documentclass[a4paper]{article}
-
 \usepackage{color}
 \usepackage{url}
 \usepackage[T2A]{fontenc}
@@ -7,14 +6,26 @@
 \usepackage{graphicx}
 \usepackage[english,serbian]{babel} %AKO BUDETE PISALI CIRILICOM ONDA IZMENITE OVU LINIJU KODA
 \usepackage[unicode]{hyperref}
-\hypersetup{colorlinks,citecolor=pink,filecolor=green,linkcolor=blue,urlcolor=blue} %STAVILA SAM ROZE BOJU ZA CITE AKO VAM SE NE SVIDJA MENJAJTE 
+\hypersetup{colorlinks,citecolor=blue,filecolor=green,linkcolor=blue,urlcolor=blue} 
 \newtheorem{primer}{Primer}[section]
+\title{Kompanija IBM \\
+\normalsize Seminarski rad u okviru kursa\\ Tehničko i naucno pisanje
+\\Matematički fakultet}
+\author{Staša Đorđević \and
+Jovana Medenica \and
+Marko Veljović \and
+Matija Radulović} %TODO ako treba mejl indeks itd pored imena
+\date{15. novembar 2022.} %TODO
 
 \begin{document}
-
+\maketitle
+%TODO mozda dodati sazetak 
+\tableofcontents
+\section{Uvod}
+OVDE CU NAPISATI UVOD KAD SVE ZAVRSIMO %TODO
 \section{Kompanija IBM u sadašnjosti i budućnosti}
 Kompanija IBM danas nije isto što i kompanija IBM pre 30 godina. Naime, pre 30 godina IBM bila je jedna od najmoćnijih u svetu tehnologije. Prodavali su svoje PC računare i u tome su bili veoma uspešni.
-Danas, IBM više nema licencu za svoje PC računare, jer su ih prodali kineskoj kompaniji \textbf{Lenovo} (OVDE STAVITI CITE ZA LITERATURU). I oni veoma uspešno plivaju u prodaji laptop računara, pre svega serije \textbf{ThinkPad} koja je originalno napravljena od strane IBM-a. Iako je kompanija IBM godinama bila dominantna, danas više teži ka propadanju. Međutim neki analitičari smatraju da je moguć povratak u visoki rang, zajedno sa njihovom dugogodišnjom konkurencijom, jer se trenutno bave cloud servisima i procene su da je moguće da napreduju u periodu između 2022. i 2024. godine.
+Danas, IBM više nema licencu za svoje PC računare, jer su ih prodali kineskoj kompaniji \textbf{Lenovo}\cite{lit1}. I oni veoma uspešno plivaju u prodaji laptop računara, pre svega serije \textbf{ThinkPad} koja je originalno napravljena od strane IBM-a. Iako je kompanija IBM godinama bila dominantna, danas više teži ka propadanju. Međutim neki analitičari smatraju da je moguć povratak u visoki rang, zajedno sa njihovom dugogodišnjom konkurencijom, jer se trenutno bave cloud servisima i procene su da je moguće da napreduju u periodu između 2022. i 2024. godine.
 
 \begin{primer}
 Najveća konkurencija su kompanije Google, Microsoft i Amazon.
@@ -35,7 +46,7 @@ Kompanija se 2021. godine deli na dve dela, kao strategija za napredovanje. Odva
 
 \begin{table}[h!]
 \begin{center}
-\caption{Zarada kompanije IBM u prethodnih 5 godina i broj zaposlenih.(OVDE UBACITI CITE ZA LITERATURU)}
+\caption{Zarada kompanije IBM u prethodnih 5 godina i broj zaposlenih. \cite{tabela}}
 \begin{tabular}{|c|c|c|c|c|} \hline
 Year& Net income in mil.USD& Total assets in mil. USD& Price per share in USD& Employees \\ \hline
 2017	&5,753	&125,356	&149.76	&366,600\\ \hline
@@ -43,15 +54,22 @@ Year& Net income in mil.USD& Total assets in mil. USD& Price per share in USD& E
 2019	&9,400	&152,186	&126.85	&352,600\\ \hline
 2020	&5,590	&155,971	&125.88	&345,900\\ \hline
 2021	&5,743	&132,001	&133.66	&282,100\\ \hline
-
 \end{tabular}
 \label{tab:tabela1}
 \end{center}
 \end{table}
 
+\section{Zaključak}
+OVDE CU NAPISATI NEKI ZAKLJUCAK NA KRAJU %TODO
 
-% literatura za sadasnjost: https://www.thecoldwire.com/what-happened-to-ibm/
-% literatura za tabelu: https://en.wikipedia.org/wiki/IBM
-
+\addcontentsline{toc}{section}{Literatura}
+\renewcommand{\refname}{Literatura}
+\begin{thebibliography}{9}
+\bibliographystyle{unsrt}
+\bibitem{lit1} What happend to IBM? 
+\url{https://www.thecoldwire.com/what-happened-to-ibm}
+\bibitem{tabela} Wikipedia %PROVERITI DA LI JE WIKI IZVORNA LITERATURA
+\url{https://en.wikipedia.org/wiki/IBM}
+\end{thebibliography}
 
 \end{document}
