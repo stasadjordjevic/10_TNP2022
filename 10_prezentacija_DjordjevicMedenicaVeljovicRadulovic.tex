@@ -2,14 +2,18 @@
 \usepackage{beamerthemeshadow}
 \usetheme{Warsaw}
 \usepackage{graphicx}
+\usepackage{caption,subcaption}
+%\usepackage[showframe]{geometry}
 \usepackage{color}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage[flushleft]{threeparttable}
 \usepackage[T2A]{fontenc}
 \usepackage[english,serbian]{babel}
-\definecolor{beamer@lightblue}{rgb}{0.29,0.42,0.69}
-\setbeamercolor{structure}{fg=beamer@lightblue}
+\definecolor{beamer@darkerblue}{rgb}{0.1.5,0.2,0.35}
+\definecolor{beamer@ibmblue}{rgb}{0.3,0.42,0.7}
+\setbeamercolor{structure}{fg=beamer@ibmblue}
+\setbeamercolor{section in head/foot}{bg=beamer@darkerblue}
 
 \def\d{{\fontencoding{T1}\selectfont\dj}}
 \def\D{{\fontencoding{T1}\selectfont\DJ}}
@@ -66,20 +70,57 @@ Matija Radulović}
 \end{frame}
 
 \begin{frame}[fragile]\frametitle{Najbitniji izumi}
-	\begin{itemize}	
-		\item SLIKE
-		\item SLIKE
-		\item SLIKE
-	\end{itemize}
+	\begin{figure}[htb]\captionsetup[subfigure]{labelformat=empty}
+    \centering 
+\begin{subfigure}{0.25\textwidth}
+  \includegraphics[width=\linewidth]{ibm603.jpg}
+  \caption{IBM 603}
+  \label{fig:1}
+\end{subfigure}\hfil
+\begin{subfigure}{0.25\textwidth}
+  \includegraphics[width=\linewidth]{ibm650.png}
+  \caption{IBM 650}
+  \label{fig:2}
+\end{subfigure}\hfil
+\begin{subfigure}{0.25\textwidth}
+  \includegraphics[width=\linewidth]{sys360.jpg}
+  \caption{Sistem 360}
+  \label{fig:3}
+\end{subfigure}
+
+\medskip
+\begin{subfigure}{0.25\textwidth}
+  \includegraphics[width=\linewidth]{ibmpc.jpg}
+  \caption{IBM PC}
+  \label{fig:4}
+\end{subfigure}\hfil 
+\begin{subfigure}{0.25\textwidth}
+  \includegraphics[width=\linewidth]{ibmpc.jpg}
+  \caption{image5}
+  \label{fig:5}
+\end{subfigure}\hfil 
+\begin{subfigure}{0.25\textwidth}
+  \includegraphics[width=\linewidth]{ibmpc.jpg}
+  \caption{image6}
+  \label{fig:6}
+\end{subfigure}
+\caption{Fasi del processo di impregnazione}
+\label{fig:images}
+\end{figure}
 \end{frame}
 
 \begin{frame}[fragile]\frametitle{Najbitniji izumi}
 	\begin{itemize}	
-		\item ...
-		\item ...
-		\item ...
-	\end{itemize}
+		\item IBM 603, 701
+		\item IBM 650, 1401	
+		\item porodica računara Sistem/360
+		\item IBM 5100, PC
+		\item magnetna traka, hard disk, flopi disk, DRAM
+		\item relacione baze, RISC, UPC, protokoli,
+		\item Nobelove nagrade, standardi i protokoli, STM, RISC, UPC, itd.
+		\end{itemize}
 \end{frame}
+	
 
 \section{IBM danas}
 
